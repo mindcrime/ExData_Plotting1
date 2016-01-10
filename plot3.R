@@ -20,8 +20,6 @@ filteredByDateComplete$DateTime <- as.POSIXct( filteredByDateComplete$DateTime, 
 png( file="plot3.png", width = 480, height = 480 );
 
 with(filteredByDateComplete, plot(DateTime, Sub_metering_1, type="n", ylab="Energy sub-metering", xlab="", ylim=c(0, 40 ) ) )
-with(filteredByDateComplete, plot(DateTime, Sub_metering_2, type="n", ylab="Energy sub-metering", xlab="", ylim=c(0, 40 ) ) )
-with(filteredByDateComplete, plot(DateTime, Sub_metering_3, type="n", ylab="Energy sub-metering", xlab="", ylim=c(0, 40 ) ) )
 
 with( filteredByDateComplete, lines( DateTime, Sub_metering_1 ) );
 with( filteredByDateComplete, lines( DateTime, Sub_metering_2, col="red" ) );
